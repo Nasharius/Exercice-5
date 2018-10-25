@@ -21,6 +21,8 @@ tools:context=".SignUpActivity">
             android:id="@+id/signup_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            android:drawablePadding="5dp"
             android:hint="Email"
             android:inputType="textEmailAddress"
             android:singleLine="true" />
@@ -38,9 +40,13 @@ tools:context=".SignUpActivity">
         app:layout_constraintTop_toBottomOf="@+id/signup_inputlayere">
 
         <android.support.design.widget.TextInputEditText
+            android:id="@+id/signup_edittextp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password" />
+            android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="5dp"
+            android:hint="Password"
+            android:maxLength="8" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -55,9 +61,13 @@ tools:context=".SignUpActivity">
         app:layout_constraintTop_toBottomOf="@+id/signup_inputlayerp">
 
         <android.support.design.widget.TextInputEditText
+            android:id="@+id/signup_edittextcp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Confirm password" />
+            android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="5dp"
+            android:hint="Confirm password"
+            android:maxLength="8" />
     </android.support.design.widget.TextInputLayout>
 
     <ImageView
@@ -71,8 +81,7 @@ tools:context=".SignUpActivity">
         app:layout_constraintBottom_toTopOf="@+id/signup_inputlayere"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_action_name" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/signup_send"
@@ -82,7 +91,7 @@ tools:context=".SignUpActivity">
         android:layout_marginTop="30dp"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="90dp"
-        android:text="Button"
+        android:text="Send"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/signup_cancel"
         app:layout_constraintStart_toStartOf="parent"
@@ -96,7 +105,7 @@ tools:context=".SignUpActivity">
         android:layout_marginTop="30dp"
         android:layout_marginEnd="65dp"
         android:layout_marginBottom="90dp"
-        android:text="Button"
+        android:text="Cancel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/signup_send"
