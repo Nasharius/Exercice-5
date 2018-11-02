@@ -1,4 +1,14 @@
 <resources>
-    <string name="app_name">Exercice5</string>
+    <string name="app_name">LoginX</string>
     <string name="title_activity_sign_up">SignUpActivity</string>
+    
+    <string-array name="choices">
+        <item>Series</item>
+        <item>Technology</item>
+        <item>Movies</item>
+        <item>Sports</item>
+        <item>History</item>
+        <item>Economy</item>
+        <item>Actuality</item>
+    </string-array>
 </resources>
